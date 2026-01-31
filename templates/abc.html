@@ -1,9 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Flask App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC - Flask App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #a0a0a0;
+            max-width: 500px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(233, 69, 96, 0.5);
+            animation: none;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(233, 69, 96, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 20px 5px rgba(233, 69, 96, 0.3);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Flask App</h1>
+    <h1>📋 ABC Page</h1>
+    <p>Welcome to the ABC section. Add your custom content here.</p>
+    <a href="/" class="back-btn">🏠 Back to Home</a>
 </body>
+
 </html>

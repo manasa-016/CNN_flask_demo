@@ -1,9 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Flask App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 50px;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .nav-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px 25px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .nav-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .nav-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .nav-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .nav-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .nav-card:hover {
+            background: rgba(233, 69, 96, 0.15);
+            border-color: #e94560;
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.3);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .nav-card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .nav-card p {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Flask App</h1>
+    <div class="container">
+        <h1>🚀 Flask App</h1>
+        <p class="subtitle">Welcome to the CNN Flask Demo</p>
+
+        <div class="nav-grid">
+            <a href="/abc" class="nav-card">
+                <div class="icon">📋</div>
+                <h2>ABC Page</h2>
+
+            </a>
+
+            <a href="/bmw" class="nav-card">
+                <div class="icon">🚗</div>
+                <h2>BMW</h2>
+
+            </a>
+
+            <a href="/st" class="nav-card">
+                <div class="icon">🎬</div>
+                <h2>St</h2>
+
+            </a>
+
+            <a href="/images" class="nav-card">
+                <div class="icon">🖼️</div>
+                <h2>Images</h2>
+
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Flask Demo App
+        </footer>
+    </div>
 </body>
+
 </html>
