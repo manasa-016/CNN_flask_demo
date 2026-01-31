@@ -7,8 +7,8 @@ def index():
     return render_template("index.html")
 
 @app.route("/<name>")
-def name(name):
-    return render_template("name.html",name=name)
+def name (name):
+    return render_template("name.html",name=name,image=name+".jpg")
 
 @app.route("/abc")
 def abc():
